@@ -1,41 +1,112 @@
-# Projet React + Symfony
+# project-1735210696020
 
-## Installation
+Generated with AI Project Architect
 
-### Frontend (React)
+
+
+## 🚀 Démarrage Rapide
+
 ```bash
-cd frontend
-npm install
-npm run dev
-```
+# Cloner le projet
+git clone <repository-url>
 
-### Backend (Symfony)
-```bash
-cd backend
+# Installer les dépendances
 composer install
-php bin/console doctrine:database:create
-php bin/console doctrine:migrations:migrate
-php bin/console lexik:jwt:generate-keypair
-symfony server:start
+
+# Démarrer le projet
+symfony serve -d
 ```
 
-## Structure du projet
+## 📁 Structure du Projet
 
-### Frontend
-- `/src/components`: Composants React réutilisables
-- `/src/pages`: Pages de l'application
-- `/src/services`: Services pour les appels API
-- `/src/store`: Gestion de l'état avec Zustand
-- `/src/hooks`: Hooks personnalisés
-- `/src/interfaces`: Types TypeScript
+```
+├── frontend/src/assets/
+├── frontend/src/components/
+├── frontend/src/hooks/
+├── frontend/src/interfaces/
+├── frontend/src/pages/
+├── frontend/src/services/
+├── frontend/src/store/
+├── frontend/src/utils/
+├── frontend/public/
+├── backend/src/Controller/
+├── backend/src/Entity/
+├── backend/src/Repository/
+├── backend/src/Service/
+├── backend/src/DataFixtures/
+├── backend/config/
+├── backend/migrations/
+├── backend/tests/
+```
 
-### Backend
-- `/src/Controller`: Contrôleurs Symfony
-- `/src/Entity`: Entités Doctrine
-- `/src/Repository`: Repositories Doctrine
-- `/src/Service`: Services métier
-- `/config`: Fichiers de configuration
+## 🛠️ Technologies Utilisées
 
-## Développement
-- Frontend: http://localhost:5173
-- Backend: http://localhost:8000
+
+
+
+
+## 📚 Documentation
+
+### Installation
+
+1. Cloner le repository
+2. Installer les dépendances :
+   
+   
+3. Configurer les variables d'environnement :
+   - Copier `.env.example` vers `.env`
+   - Ajuster les variables selon votre environnement
+
+### Développement
+
+```bash
+# Démarrer en mode développement
+symfony serve
+
+# Lancer les tests
+php bin/phpunit
+
+# Builder pour la production
+composer install --no-dev --optimize-autoloader
+```
+
+## 🧪 Tests
+
+Le projet inclut des tests unitaires et d'intégration :
+
+```bash
+# Lancer tous les tests
+php bin/phpunit
+
+# Avec couverture de code
+php bin/phpunit --coverage-html coverage
+```
+
+## 🚀 Déploiement
+
+1. Builder le projet :
+   ```bash
+   composer install --no-dev --optimize-autoloader
+   ```
+
+2. Configurer votre serveur web (Nginx/Apache)
+3. Mettre à jour les variables d'environnement
+4. Déployer avec votre outil préféré (GitHub Actions, Jenkins, etc.)
+
+## 📝 Contribution
+
+1. Forker le projet
+2. Créer une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`)
+3. Commiter vos changements (`git commit -m 'Add some AmazingFeature'`)
+4. Pusher vers la branche (`git push origin feature/AmazingFeature`)
+5. Ouvrir une Pull Request
+
+## 📜 License
+
+Distribué sous la licence MIT. Voir `LICENSE` pour plus d'informations.
+
+## 🤝 Contact
+
+Votre Nom - [@votretwitter](https://twitter.com/votretwitter)
+
+Lien du projet: [https://github.com/votreusername/project-1735210696020](https://github.com/votreusername/project-1735210696020)
